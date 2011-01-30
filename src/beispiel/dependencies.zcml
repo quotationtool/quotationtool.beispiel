@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope">
+
+  <!-- packages needed to use the beispiel package as a library -->
+
+  <include package="zope.component" file="meta.zcml"/>
+  <include package="zope.security" file="meta.zcml"/>
+  <include package="zope.securitypolicy" file="meta.zcml"/>
+
+  <include package="zope.component"/>
+  <include package="zope.site"/>
+  <include package="zope.security"/>
+  <include package="zope.app.schema"/>
+  <include package="zope.annotation"/>
+
+  <include package="quotationtool.security"/>
+  <include package="quotationtool.site"/>
+  <include package="quotationtool.skin"/>
+  <include package="quotationtool.site"/>
+  <include package="quotationtool.relation"/>
+  <include package="quotationtool.renderer"/>
+  <include package="quotationtool.search"/>
+  <include package="quotationtool.categorization"/>
+  <include package="quotationtool.biblatex"/>
+  <include package="quotationtool.biblatex.browser"/>
+  <include package="quotationtool.figuresng"/>
+  <include package="quotationtool.commentary"/>
+
+  <!-- roles.zcml files are included from securitypolicy.zcml -->
+
+</configure>

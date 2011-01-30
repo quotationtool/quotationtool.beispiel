@@ -1,0 +1,14 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser">
+
+   <!-- ZCML declarations to override the default definitions -->
+
+   <browser:defaultSkin name="Bochum"/>
+   
+   <browser:defaultView
+       for="zope.interface.Interface"
+       name="index.html"
+       />
+
+</configure>

@@ -1,0 +1,29 @@
+
+
+
+Conversion from Ruhr-Uni
+------------------------
+
+For converting the zodb from the 2009 version which runs at Ruhr-Uni
+Bochum do the folling steps.
+
+1) cd to ../bspconversion and put DATA.fs in var/
+
+2) run bin/pack and bin/doConversion
+
+3) cp DATA.fs into quotationtool.beispiel/var/filestorage
+
+4) run the instance by bin/paster serve debug.ini
+
+The doConversion script does:
+
+- it creates a new root folder object based on zope.site.folder.Folder
+
+- it creates and registers some utilities in its site manager
+
+- it copies the existing quotationtool app (IQuotationtoolSite object)
+  to this new root folder
+
+- it stores the new root folder in the database's root under the name
+  'Application'
+

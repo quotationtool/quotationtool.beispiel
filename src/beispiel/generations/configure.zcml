@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope">
+
+  <!-- set initial generation to 0 -->
+  <!--utility
+      factory="zope.app.generations.generations.SchemaManager"
+      name="beispiel"
+      /-->
+
+  <utility
+      component=".BeispielSchemaManager"
+      name="beispiel"
+      />
+
+</configure>
