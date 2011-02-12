@@ -1,0 +1,99 @@
+<tal:block     
+    i18n:domain="beispiel"
+    i18n:translate="tutorial">
+
+<div id="tutorial">
+
+<h1><span lang="de" xml:lang="de">Archiv des Beispiels</span> - Tutorial</h1>
+
+<h2>Part I - Adding an Example [for which there's no bibliographical
+reference yet]:</h2>
+
+<p>This part of the tutorial explains how to add a new example for
+which there is no bibliographical reference in the database yet.
+</p>
+
+<h3>1. Adding a Uniform Title</h3>
+
+<ul>
+
+  <li>a.) Navigate to the <span
+  class="navigation-uniformtitlecontainer">Uniform Titles</span>
+  folder and click the <span
+  class="add-content">Add&nbsp;a&nbsp;new&nbsp;Uniform&nbsp;Title</span>
+  button at the bottom of the list!</li>
+
+  <li>b.) Fill in the form! (Attention: Some fields are not provided by
+  default. Click the button to get them, e.g. <span class="button">Add
+  Author</span>.)</li>
+
+  <li>c.) <span class="add-content">Add</span></li>
+
+</ul>
+
+<p>Then you have to enter which edition you want to use. Continue
+where you are (at the <span class="tab">Editions</span> tab of the
+newly created uniform title):</p>
+
+<h3>2. Adding the Edition</h3>
+
+<ul>
+
+  <li>a.) <span
+  class="add-content">Add&nbsp;a&nbsp;new&nbsp;Edition</span>
+  <br/>Then you are asked which type of reference you want to
+  add. Choose one and click <span class="button">Add</span></li>
+  
+  <li>b.) Fill in the form (address means the publisher's town)</li>
+
+  <li>c.) <span class="add-content">Add</span> <br/>(After adding you
+  will be directed to a detailed view of the newly created
+  bibliographical reference. You are able to edit the data via
+  the <span class="button">Edit</span> button on the right.)</li>
+</ul>
+
+<p>The next step is to add the example:</p>
+
+<h3>3. Adding the example</h3>
+
+<ul>
+
+  <li>a) Go to the <span class="tab">Examples</span> tab of the newly
+  created reference.</li>
+
+  <li>b) <span
+  class="add-content">Add&nbsp;a&nbsp;new&nbsp;Example</span></li>
+
+  <li>c) Fill in the form! (Feel free to enter several terms separated
+  by commas into the Meaning/Denotation field.)</li>
+
+  <li>d) <span class="add-content">Add</span>
+
+  </li>
+
+</ul>
+
+<p><strong>You're done!</strong></p>
+
+
+<h2>Part II - Adding further Examles [for which there is already a
+reference in the bibliography]:</h2>
+
+<p>This part of the tutorial explains how to add examples given that
+the bibliographical reference is already in the database.</p>
+
+<h3>Cycle of adding further examples:</h3>
+
+<ul>
+
+  <li>a.) Navigate to the <span
+  class="navigation-referatory">Bibliography</span> folder.</li>
+
+  <li>b.) Choose a reference form the list and follow the link!</li>
+
+  <li>c.) Follow the steps from part I 3</li>
+</ul>
+
+
+</div>
+</tal:block>

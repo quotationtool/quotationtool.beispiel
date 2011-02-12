@@ -9,7 +9,6 @@ registered, relation preconditions validate as we want etc.
 from zope.interface import classImplements
 
 from quotationtool.figuresng.example import Example
-from quotationtool.figuresng.interfaces import IReference
 from quotationtool.biblatex.biblatexentry import BiblatexEntry
 from quotationtool.commentary.interfaces import ICommentable
 from quotationtool.categorization.interfaces import ICategorizable
@@ -22,14 +21,12 @@ classImplements(Example, ICommentable)
 classImplements(BiblatexEntry, ICategorizable)
 classImplements(Example, ICategorizable)
 
-# relation precondition for containing examples (and other figures) 
-classImplements(BiblatexEntry, IReference)
-
 
 # BBB: remove in 0.2.0
 from quotationtool.referatory.uniformtitle import UniformTitle
 from quotationtool.referatory.reference import Reference
+from quotationtool.bibliography.interfaces import IEntry
 classImplements(Reference, ICommentable)
-classImplements(Reference, IReference)
+classImplements(Reference, IEntry)
 classImplements(UniformTitle, ICategorizable)
 classImplements(Reference, ICategorizable)

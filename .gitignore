@@ -11,6 +11,10 @@ src/*.egg-info
 
 var/filestorage/*
 var/log/*
+var/beispiel-data/*
+var
+
+*.tgz
 
 # TODO: remove
-src/beispiel/browser
+src/beispiel/browser.OLD

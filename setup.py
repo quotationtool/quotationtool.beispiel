@@ -92,13 +92,16 @@ setup(
         'quotationtool.relation',
         'quotationtool.skin',
         'quotationtool.search',
+        'quotationtool.bibliography',
         'quotationtool.biblatex',
         'quotationtool.figuresng',
         'quotationtool.commentary',
         'quotationtool.categorization',
+        'quotationtool.user',
         
         #BBB: remove in 0.2.0
         'quotationtool.referatory',
+        'quotationtool',
         
         # for old DB items
         'zope.app.folder',

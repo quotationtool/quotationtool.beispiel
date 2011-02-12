@@ -1,0 +1,21 @@
+<configure
+    xmlns='http://namespaces.zope.org/zope'
+    xmlns:browser='http://namespaces.zope.org/browser'
+    xmlns:z3c='http://namespaces.zope.org/z3c'
+    i18n_domain='beispiel'>
+
+  <z3c:pagelet
+      name="help.html"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      layer="..interfaces.IBeispielBrowserLayer"
+      class=".tutorial.Tutorial"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".tutorial.Tutorial"
+      template="tutorial.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+</configure>
+

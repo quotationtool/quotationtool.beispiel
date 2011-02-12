@@ -1,0 +1,68 @@
+LaTeX
+=====
+
+babel packages on beispiel.germanistik.tu-dortmund.de 
+-----------------------------------------------------
+
+Language support:
+
+ a [X] African scripts                   s [X] Indic scripts                   
+ b [X] Arabic                            t [X] Italian                         
+ c [X] Armenian                          u [X] Latin                           
+ d [X] Chinese, Japanese, Korean         v [X] Latvian                         
+ e [X] Croatian                          w [X] Lithuanian                      
+ f [X] Cyrillic                          x [X] Mongolian                       
+ g [X] Czech/Slovak                      y [X] Norwegian                       
+ h [X] Danish                            z [X] Other hyphenation files         
+ i [X] Dutch                             0 [X] Polish                          
+ j [X] US and UK English                 1 [X] Portuguese                      
+ k [X] Finnish                           2 [X] Spanish                         
+ l [X] French                            3 [X] Swedish                         
+ m [X] German                            4 [X] Tibetan                         
+ n [X] Greek                             5 [X] Turkmen                         
+ o [X] Hebrew                            6 [X] Vietnamese                      
+ p [X] Hungarian                        
+
+
+texlive collections on beispiel.germanistik.tu-dortmund.de
+----------------------------------------------------------
+
+Select collections:
+
+ a [X] Essential programs and files      o [X] Basic LaTeX packages            
+ b [X] Extra BibTeX styles               p [X] LaTeX3 packages                 
+ c [X] TeX auxiliary programs            s [X] LaTeX supplementary packages    
+ d [X] ConTeXt format                    t [X] LaTeX recommended packages      
+ e [X] TeX Live documentation            u [X] LuaTeX packages                 
+ f [X] Extra fonts                       v [X] Advanced math typesetting       
+ g [X] Recommended fonts                 w [X] Music typesetting               
+ h [X] TeX and Outline font utilities    x [X] Omega                           
+ i [X] Extra formats                     y [X] Graphics packages and programs  
+ j [X] Games typesetting                 z [X] PSTricks packages               
+ k [X] Extra generic packages            A [X] GNU Texinfo                     
+ l [X] Recommended generic packages      B [X] The TeXworks Editor             
+ m [X] HTML/SGML/XML support             C [ ] Windows support programs        
+ n [X] Humanities packages               D [X] XeTeX packages                  
+ E [X] MetaPost (and Metafont) drawing packages
+ F [X] Plain TeX supplementary packages
+ G [X] Support for publishers, theses, standards, conferences, etc.
+ H [X] Typesetting for natural and computer sciences
+
+Actions: (disk space required: 2522 MB)
+
+
+Directories setup:
+
+ <1> TEXDIR:       /opt/texlive/2010
+     support tree: /opt/texlive/2010/texmf
+
+ <2> TEXMFLOCAL:     /opt/texlive/2010/texmf-local
+ <3> TEXMFSYSVAR:    /opt/texlive/2010/texmf-var
+ <4> TEXMFSYSCONFIG: /opt/texlive/2010/texmf-config
+
+ <5> TEXMFVAR:       ~/.texlive2010/texmf-var
+ <6> TEXMFCONFIG:    ~/.texlive2010/texmf-config
+ <7> TEXMFHOME:      ~/texmf
+
+ Note: ~ will expand to $HOME (or to %USERPROFILE% on Windows)
+

@@ -1,0 +1,47 @@
+<configure
+    xmlns='http://namespaces.zope.org/browser'
+    xmlns:zope='http://namespaces.zope.org/zope'
+    xmlns:z3c='http://namespaces.zope.org/z3c'
+    i18n_domain='beispiel'>
+
+  <zope:view
+      name="title"
+      type="..interfaces.IBeispielBrowserLayer"
+      for="quotationtool.biblatex.interfaces.IBiblatexEntry"
+      factory=".biblatex.TitleViewBSP"
+      permission="zope.View"
+      />
+
+  <zope:view
+      name="year"
+      type="..interfaces.IBeispielBrowserLayer"
+      for="quotationtool.biblatex.interfaces.IBiblatexEntry"
+      factory=".biblatex.YearViewBSP"
+      permission="zope.View"
+      />
+
+  <z3c:pagelet
+      for="quotationtool.bibliography.interfaces.IBibliography"
+      name="addBiblatexEntry.html"
+      permission="quotationtool.bibliography.AddEntry"
+      layer="..interfaces.IBeispielBrowserLayer"
+      class=".biblatex.AdvancedAddFormBSP"
+      />
+
+  <z3c:wizardStep
+      name="publication_facts"
+      wizard="quotationtool.biblatex.browser.edit.EditWizard"
+      class=".biblatex.EditPublicationFactsStepBSP"
+      permission="quotationtool.bibliography.EditEntry"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+  <zope:adapter
+      factory=".biblatex.OrigDateRequiredValidator"
+      />
+
+  <zope:adapter
+      factory=".biblatex.OrigTitleRequiredValidator"
+      />
+
+</configure>

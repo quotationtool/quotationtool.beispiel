@@ -1,0 +1,24 @@
+#header {
+    color: #649600;
+}
+
+#header .header-left {
+    display: block
+    float: left;
+}
+
+#header .header-right {
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/*
+#mainnav li li.selected {
+    color:#649600;
+}
+#bgmainnav {
+    background-color:#649600;
+}
+*/

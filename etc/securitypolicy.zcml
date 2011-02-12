@@ -39,10 +39,16 @@
 
   <include package="quotationtool.security"/>
   <include package="quotationtool.security" file="roles.zcml"/>
-  <include package="quotationtool.biblatex" file="roles.zcml"/>
+  <include package="quotationtool.bibliography" file="roles.zcml"/>
   <include package="quotationtool.categorization" file="roles.zcml"/>
   <include package="quotationtool.figuresng" file="roles.zcml"/>
   <include package="quotationtool.commentary" file="roles.zcml"/>
+  <include package="quotationtool.user" file="roles.zcml"/>
+
+  <grant
+      role="quotationtool.Visitor"
+      principal="zope.anybody"
+      />
   
   <!-- TODO: remove in production instance -->
   <grant

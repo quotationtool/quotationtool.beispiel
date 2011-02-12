@@ -1,0 +1,195 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Mon Mar 16 17:01:49 2009\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: /home/clueck/src/py/quotationtool/src/quotationtool/security/browser/configure.zcml:5
+#. Default: "Edit"
+msgid "label-edit"
+msgstr ""
+
+#: src/beispiel/browser/configure.zcml:91
+msgid "Create a utility that randomly picks an example of the day."
+msgstr ""
+
+#: src/beispiel/browser/configure.zcml:91
+msgid "Example Of Day Utility"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:104
+#. Default: "Comments"
+msgid "comments-in-example-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:118
+#. Default: "Examples"
+msgid "examples-in-reference-tabs"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:131
+#. Default: "Examples"
+msgid "examples-in-uniformtitle-tabs"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:144
+#: src/beispiel/browser/menu.zcml:158
+#: src/beispiel/browser/menu.zcml:172
+#. Default: "Categorization"
+msgid "attribution-tab"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:21
+#. Default: "Examples"
+msgid "examples-in-reference-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:34
+#. Default: "Examples"
+msgid "examples-in-uniformtitle-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:47
+#. Default: "Tutorial"
+msgid "beispiel-tutorial-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:6
+#. Default: "Examples"
+msgid "examplecontainer-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:60
+#: src/beispiel/browser/menu.zcml:71
+#: src/beispiel/browser/menu.zcml:82
+#. Default: "Categorization"
+msgid "attribution-navigation"
+msgstr ""
+
+#: src/beispiel/browser/menu.zcml:93
+#. Default: "Comments"
+msgid "comments-in-reference-navigation"
+msgstr ""
+
+#: src/beispiel/browser/welcome.pt:4
+msgid "Welcome to <i>Archiv des Beispiels</i>"
+msgstr ""
+
+#: src/beispiel/browser/welcome.pt:6
+msgid "You can now log in using the login name and password you entered during the sign-up process."
+msgstr ""
+
+#: src/beispiel/tutorial_de.pt:3
+#: src/beispiel/browser/tutorial.pt:3
+#. Default: ""
+#.  "<div id=\"tutorial\">\n"
+#.  "\n"
+#.  "<h1>Archiv des Beispiels - Tutorial</h1>\n"
+#.  "\n"
+#.  "<h2>Teil I - Neue Eingabe eines Beispiels [zu dem noch keine\n"
+#.  "Literaturangaben existieren]:</h2>\n"
+#.  "\n"
+#.  "<p>Ein neues Beispiel eingeben, zu dem noch keine Literaturangaben\n"
+#.  "(Einheitssachtitel, Ausgabe etc.) existieren.</p>\n"
+#.  "\n"
+#.  "<h3>1. Hinzuf\303\274gen eines Einheitssachtitels</h3>\n"
+#.  "\n"
+#.  "<ul>\n"
+#.  "\n"
+#.  "  <li>a.) Zum Ordner <span class=\"navigation-uniformtitlecontainer\">Einheitssachtitel</span>\n"
+#.  "  navigiren und am Ende der Liste <span class=\"add-content\">Einheitssachtitel&nbsp;hinzuf\303\274gen</span>\n"
+#.  "  klicken.</li>\n"
+#.  "\n"
+#.  "  <li>b.) Ausf\303\274llen des Formulars (Achtung: einige sind nicht\n"
+#.  "  automatisch angezeigt. Hier muss noch eine Schaltfl\303\244che angeklickt\n"
+#.  "  werden, z.B. <span class=\"button\">Autor hinzuf\303\274gen</span>)</li>\n"
+#.  "\n"
+#.  "  <li>c.) <span class=\"add-content\">Hinzuf\303\274gen</span></li>\n"
+#.  "\n"
+#.  "</ul>\n"
+#.  "\n"
+#.  "<p>Im Anschluss muss die entsprechende Ausgabe eingegeben werden, die\n"
+#.  "zitiert werden wird. Es geht nahtlos unter <span class=\"tab\">Ausgaben</span> weiter:</p>\n"
+#.  "\n"
+#.  "<h3>2. Eingabe der verwendeten Ausgabe</h3>\n"
+#.  "\n"
+#.  "<ul>\n"
+#.  "\n"
+#.  "  <li>a.) <span class=\"add-content\">Ausgabe hinzuf\303\274gen</span> (Dann\n"
+#.  "  wird gefragt ob Buch, Artikel, Incollection; entsprechend ausw\303\244hlen\n"
+#.  "  und <span class=\"button\">Hinzuf\303\274gen</span>)</li>\n"
+#.  "  \n"
+#.  "  <li>b.) Ausf\303\274llen des Formulars (Address meint den Ort)</li>\n"
+#.  "\n"
+#.  "  <li>c.) <span class=\"add-content\">Hinzuf\303\274gen</span> (Danach bekommt\n"
+#.  "  man eine \303\234bersicht \303\274ber seine Eingaben, mit <span class=\"button\">\303\204ndern</span> rechts, k\303\266nnen die Daten im Fall des\n"
+#.  "  Falls ver\303\244ndert werden)</li>\n"
+#.  "</ul>\n"
+#.  "\n"
+#.  "<p>Der n\303\244chste Schritt ist, ein Beispiel einzutragen:</p>\n"
+#.  "\n"
+#.  "<h3>3. Beispieleintrag</h3>\n"
+#.  "\n"
+#.  "<ul>\n"
+#.  "\n"
+#.  "  <li>a) Den Reiter <span class=\"tab\">Beispiele</span> der neu\n"
+#.  "  angelegten Ausgabe \303\266ffnen.</li>\n"
+#.  "\n"
+#.  "  <li>b) <span class=\"add-content\">Beispiel hinzuf\303\274gen</span></li>\n"
+#.  "\n"
+#.  "  <li>c) Felder Ausf\303\274llen (Bei Bedeutung/Gemeintes, das ja meint,\n"
+#.  "  wof\303\274r das Beispiel steht, k\303\266nnen auch mehrere, durch Kommata\n"
+#.  "  getrennte Informationen stehen)</li>\n"
+#.  "\n"
+#.  "  <li>d) <span class=\"add-content\">Hinzuf\303\274gen</span>\n"
+#.  "\n"
+#.  "  </li>\n"
+#.  "\n"
+#.  "</ul>\n"
+#.  "\n"
+#.  "<p><strong>Fertig!!</strong></p>\n"
+#.  "\n"
+#.  "\n"
+#.  "<h2>Teil II - Eingabe von weiteren Beispielen [zu denen schon\n"
+#.  "Literaturangaben existieren]:</h2>\n"
+#.  "\n"
+#.  "\n"
+#.  "<h3>Schematisierter Ablauf:</h3>\n"
+#.  "\n"
+#.  "<ul>\n"
+#.  "\n"
+#.  "  <li>a.) Zum Ordner <span class=\"navigation-referatory\">Bibliographie</span> navigieren</li>\n"
+#.  "\n"
+#.  "  <li>b.) Literaturangabe aus der Liste ausw\303\244hlen und anklicken</li>\n"
+#.  "\n"
+#.  "  <li>c.) <span class=\"tab\">Bespiele</span></li>\n"
+#.  "\n"
+#.  "  <li>d.) <span class=\"add-content\">Beispiel hinzuf\303\274gen</span></li>\n"
+#.  "\n"
+#.  "</ul>\n"
+#.  "\n"
+#.  "<p>Und dann kann es einfach so weitergehen wie im Teil I ab 3.c)</p>\n"
+#.  "\n"
+#.  "</div>"
+msgid "tutorial"
+msgstr ""
+

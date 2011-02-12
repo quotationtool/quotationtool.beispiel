@@ -1,0 +1,15 @@
+<configure
+    xmlns='http://namespaces.zope.org/browser'
+    xmlns:zope='http://namespaces.zope.org/zope'
+    xmlns:z3c='http://namespaces.zope.org/z3c'
+    i18n_domain='beispiel'>
+
+  <zope:view
+      name="label"
+      type="..interfaces.IBeispielBrowserLayer"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      factory=".site.QuotationtoolLabelViewBSP"
+      permission="zope.View"
+      />
+
+</configure>

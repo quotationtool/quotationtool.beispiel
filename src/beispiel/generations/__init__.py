@@ -13,7 +13,7 @@ resturcturing of relation catalog, added commentaboutreference
 from zope.app.generations.generations import SchemaManager
 
 BeispielSchemaManager = SchemaManager(
-    minimum_generation = 0,
-    generation = 5,
-    package_name = 'quotationtool.beispiel.generations',
+    minimum_generation = 5,
+    generation = 8,
+    package_name = 'beispiel.generations',
     )

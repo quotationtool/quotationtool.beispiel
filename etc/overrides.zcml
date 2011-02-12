@@ -11,4 +11,17 @@
        name="index.html"
        />
 
+   <browser:defaultView
+       for="quotationtool.figuresng.iexample.IExample"
+       name="attribution.html"
+       />
+   <browser:defaultView
+       for="quotationtool.bibliography.interfaces.IEntry"
+       name="examples.html"
+       />
+   <browser:defaultView
+       for="quotationtool.biblatex.interfaces.IBiblatexEntry"
+       name="examples.html"
+       />
+
 </configure>

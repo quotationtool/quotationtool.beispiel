@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<metal:block 
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    define-macro="beispiel-layout">
+  <metal:macro use-macro="macro:quotationtool-layout">
+    
+    <metal:slot fill-slot="title">
+      <title>Archiv des Beispiels</title>
+    </metal:slot>
+
+    <metal:slot fill-slot="html-head-extension">
+      <tal:block replace="resource_library:beispiel.css"/>
+    </metal:slot>		 
+
+    <metal:slot fill-slot="header">
+      <div class="header-columns">
+	<a 
+	    href="http://www.tu-dortmund.de"
+	    ><img 
+	    src="images/logo-tu.png"
+	    alt="Technische Universität Dortmund"
+	    tal:attributes="src string:++resource++beispiel.images/logo_tu.png"
+	    /></a>
+	<h1 class="header-right">Archiv des Beispiels</h1>
+	<span class="cleaner"/>
+      </div>
+    </metal:slot>
+    
+    <metal:slot fill-slot="content">
+      <metal:slot define-slot="beispiel-content">
+      <div id="content">
+	<div tal:content="structure provider:pagelet"/>
+      </div>
+      </metal:slot>
+    </metal:slot>
+
+  </metal:macro>
+</metal:block>

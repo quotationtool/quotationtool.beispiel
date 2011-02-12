@@ -1,4 +1,21 @@
 import zope.interface
+from z3c.formui.interfaces import IDivFormLayer
+from zope.i18nmessageid import MessageFactory
+
+from quotationtool.skin.interfaces import IQuotationtoolBrowserLayer, IQuotationtoolBrowserSkin
+
+
+_ = MessageFactory('beispiel')
+
+
+class IBeispielBrowserLayer(IQuotationtoolBrowserLayer):
+    """ The browser layer for the beispiel application inherits the
+    quotationtool browser layer."""
+
+
+class IBeispielBrowserSkin(IBeispielBrowserLayer,
+                           IDivFormLayer):
+    """ The browser skin for the beispiel application."""
 
 
 class IRandomExample(zope.interface.Interface):
@@ -7,3 +24,5 @@ class IRandomExample(zope.interface.Interface):
 
     def getExample():
         """Returns an example."""
+
+

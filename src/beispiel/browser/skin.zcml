@@ -1,0 +1,39 @@
+<configure
+    xmlns='http://namespaces.zope.org/browser'
+    xmlns:zope='http://namespaces.zope.org/zope'
+    xmlns:z3c='http://namespaces.zope.org/z3c'
+    i18n_domain='beispiel'>
+
+  <z3c:layout
+      for="*"
+      layer="..interfaces.IBeispielBrowserLayer"
+      template="layout.pt"
+      />
+  <z3c:macro
+      name="beispiel-layout"
+      macro="beispiel-layout"
+      template="layout.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+  <z3c:layout
+      for="quotationtool.skin.interfaces.ITabbedContentLayout"
+      layer="..interfaces.IBeispielBrowserLayer"
+      template="layout_tabbedcontent.pt"
+      />
+
+  <zope:resourceLibrary
+      layer="..interfaces.IBeispielBrowserLayer"
+      name="beispiel.css">
+    <zope:directory
+	source="css"
+	include="beispiel.css"
+	/>
+  </zope:resourceLibrary>
+  <resourceDirectory
+      name="beispiel.images"
+      directory="images"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+
+</configure>

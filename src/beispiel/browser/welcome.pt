@@ -1,0 +1,8 @@
+<div>
+
+  <h1 i18n:translate="">Welcome to <i>Archiv des Beispiels</i></h1>
+
+  <p i18n:translate="">You can now log in using the login name and
+  password you entered during the sign-up process.</p>
+
+</div>

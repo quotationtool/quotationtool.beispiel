@@ -1,0 +1,14 @@
+<configure
+    xmlns='http://namespaces.zope.org/zope'
+    xmlns:browser='http://namespaces.zope.org/browser'
+    xmlns:z3c='http://namespaces.zope.org/z3c'
+    i18n_domain='beispiel'>
+
+  <include file="biblatex.zcml"/>
+  <include file="site.zcml"/>
+  <include file="skin.zcml"/>
+  <include file="user.zcml"/>
+
+  <include file="beispiel.zcml"/>
+
+</configure>
