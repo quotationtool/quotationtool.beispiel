@@ -25,7 +25,10 @@
 	    alt="Technische Universität Dortmund"
 	    tal:attributes="src string:++resource++beispiel.images/logo_tu.png"
 	    /></a>
-	<h1 class="header-right">Archiv des Beispiels</h1>
+	<h1 class="header-right"
+	    ><a href="/" 
+		tal:attributes="href request/URL/0"
+		>Archiv des Beispiels</a></h1>
 	<span class="cleaner"/>
       </div>
     </metal:slot>

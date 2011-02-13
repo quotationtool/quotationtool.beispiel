@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# Author: Christian L&uuml;ck <christian.lueck@tu-dortmund.de>, 2011
+#
+# /etc/init.d/beispiel
+#
+### BEGIN INIT INFO
+# Provides:          beispiel
+# Required-Start:    $syslog $remote_fs $network
+# Should-Start:      $time $named apache2
+# Required-Stop:     $syslog $remote_fs $network
+# Should-Stop:       $time $named apache2
+# Default-Start:     3 5
+# Default-Stop:      0 1 2 6
+# Short-Description: BlueBream Beispiel application
+# Description:       Start the BlueBream Beispiel applicaiton
+### END INIT INFO
+# 
+#
+# Note on runlevels:
+# 0 - halt/poweroff 			6 - reboot
+# 1 - single user			2 - multiuser without network exported
+# 3 - multiuser w/ network (text mode)  5 - multiuser w/ network and X11 (xdm)
+# 
+# Note on script names:
+# http://www.linuxbase.org/spec/refspecs/LSB_1.3.0/gLSB/gLSB/scrptnames.html
+# A registry has been set up to manage the init script namespace.
+# http://www.lanana.org/
+# Please use the names already registered or register one or use a
+# vendor prefix.
+
+
+# Check for missing binaries (stale symlinks should not happen)
+# Note: Special treatment of stop for LSB conformance
+FOO_BIN=/opt/quotationtool/quotationtool.beispiel/bin/paster
+test -x $FOO_BIN || { echo "$FOO_BIN not installed"; 
+	if [ "$1" = "stop" ]; then exit 0;
+	else exit 5; fi; }
+
+case "$1" in
+    start)
+	echo -n "Starting Beispiel application "
+	$FOO_BIN serve deploy.ini --daemon
+	;;
+    stop)
+	echo -n "Shutting down Beispiel application "
+	$FOO_BIN serve deploy.ini --stop-daemon
+	;;
+    restart)
+	## Stop the service and regardless of whether it was
+	## running or not, start it again.
+	$0 stop
+	$0 start
+	;;
+    *)
+	echo "Usage: $0 {start|stop|status|restart}"
+	exit 1
+	;;
+esac

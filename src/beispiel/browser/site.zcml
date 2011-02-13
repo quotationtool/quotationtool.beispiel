@@ -12,4 +12,17 @@
       permission="zope.View"
       />
 
+  <z3c:pagelet
+      name="index.html"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      class=".site.Frontpage"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".site.Frontpage"
+      template="index.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
 </configure>

@@ -1,4 +1,9 @@
 from zope.publisher.browser import BrowserView
+from z3c.pagelet.browser import BrowserPagelet
+
+
+class Frontpage(BrowserPagelet):
+    """ The frontpage for 'archiv des beispiels'."""
 
 
 class QuotationtoolLabelViewBSP(BrowserView):
