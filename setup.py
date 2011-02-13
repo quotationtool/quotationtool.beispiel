@@ -98,6 +98,7 @@ setup(
         'quotationtool.commentary',
         'quotationtool.categorization',
         'quotationtool.user',
+        'quotationtool.locales',
         
         #BBB: remove in 0.2.0
         'quotationtool.referatory',
