@@ -28,6 +28,7 @@
   <role id="zope.Anonymous" title="Everybody"
         description="All users have this role implicitly" />
   <grant permission="zope.View" role="zope.Anonymous" />
+  <grant permission="zope.Public" role="zope.Anonymous" />
 
   <role id="zope.Manager" title="Site Manager" />
   <grantAll role="zope.Manager" />
