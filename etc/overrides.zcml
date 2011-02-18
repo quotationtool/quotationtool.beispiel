@@ -24,4 +24,10 @@
        name="examples.html"
        />
 
+   <utility
+       component="beispiel.biblatexconfig.config"
+       provides="quotationtool.biblatex.interfaces.IBiblatexConfiguration"
+       name=""
+       />
+
 </configure>
