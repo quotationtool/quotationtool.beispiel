@@ -13,7 +13,7 @@
 
    <browser:defaultView
        for="quotationtool.figuresng.iexample.IExample"
-       name="attribution.html"
+       name="comments.html"
        />
    <browser:defaultView
        for="quotationtool.bibliography.interfaces.IEntry"
