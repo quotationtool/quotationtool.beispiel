@@ -12,6 +12,7 @@
   <include package="zope.security"/>
   <include package="zope.app.schema"/>
   <include package="zope.annotation"/>
+  <include package="zope.app.zopeappgenerations"/>
 
   <include package="quotationtool.security"/>
   <include package="quotationtool.site"/>

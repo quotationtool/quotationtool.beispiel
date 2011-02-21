@@ -84,6 +84,7 @@ setup(
         'zope.testbrowser',
         'zope.login',
         'zope.app.zcmlfiles',
+        'zope.app.zopeappgenerations',
 
         # quotationtool:
         'quotationtool.site',
