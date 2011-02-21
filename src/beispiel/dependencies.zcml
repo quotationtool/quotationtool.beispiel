@@ -23,7 +23,7 @@
   <include package="quotationtool.categorization"/>
   <include package="quotationtool.bibliography"/>
   <include package="quotationtool.biblatex"/>
-  <!--include package="quotationtool.biblatex" file="latex.zcml"/-->
+  <include package="quotationtool.biblatex" file="latex.zcml"/>
   <include package="quotationtool.biblatex.browser"/>
   <include package="quotationtool.figuresng"/>
   <include package="quotationtool.commentary"/>
