@@ -29,7 +29,7 @@
 	    ><a href="/" 
 		tal:attributes="href request/URL/0"
 		>Archiv des Beispiels</a></h1>
-	<span class="cleaner"/>
+	<br class="cleaner"/>
       </div>
     </metal:slot>
     
