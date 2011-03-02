@@ -1,13 +1,16 @@
 def evolve(context):
-    """ After evolution from 2009 version to 2011 version:
+    """ Evolution for new feature: tagging examples, html source type
+    for examples and comments
 
-    - replace old signup principal folder with new one
+    - set the examples' source_type attribute to
+      'html'
+
+    - cook an html source from examples quotation and store it on the
+      quotation attribute.
+
+    - Do the same thing for comments  
 
     """
-
-    # We moved the imports here because of getInfo which only takes
-    # the __doc__ string in evolve. getInfo should not import
-    # anything.
     import zope.interface
     import zope.component
     from zope.app.zopeappgenerations import getRootFolder
@@ -15,10 +18,10 @@ def evolve(context):
     from zope.app.component import hooks
     from zope.intid.interfaces import IIntIds
 
-    from quotationtool.site.interfaces import IQuotationtoolSite
-    from quotationtool.user.signup import SignupPrincipalFolder
-    from zope.app.authentication.principalfolder import IInternalPrincipal
-
+    from quotationtool.site.interfaces import IQuotationtoolSite 
+    from quotationtool.figuresng.iexample import IExample
+    from quotationtool.renderer.interfaces import IHTMLRenderer
+    from quotationtool.commentary.interfaces import IComment
 
     root = getRootFolder(context)
 
@@ -26,44 +29,37 @@ def evolve(context):
     for s in findObjectsProviding(root, IQuotationtoolSite):
         site = s
         break
-    if site is None:
-        raise Exception('No quotationtool site!')
-    hooks.setSite(site)
 
-    sm = site.getSiteManager()
 
-    intids = zope.component.getUtility(IIntIds, context = site)
+    def cookHTMLSource(obj, source = 'quotation', source_type = 'source_type'):
+        if getattr(obj, source_type) == 'html':
+            return getattr(ob, source)
 
-    pau = sm['default']['pau']
-
-    old_folder = pau['signup_principal_folder']
-    intids.register(old_folder)
-
-    new_folder = pau['SignupPrincipalFolder'] = SignupPrincipalFolder()
-    pau.authenticatorPlugins = [new_folder.__name__]
-    new_folder.prefix = "users."
-    new_folder.signup_roles = [u'quotationtool.Member']
-
-    if 1 == 0:
-        raise Exception("%d principals" % len(old_folder.values()))
-
-    still_in_old_folder = True
-    while still_in_old_folder:
-        name = old_folder.keys()[0]
-        new_folder[name] = old_folder[name]
-        assert(new_folder[name]._password == old_folder[name]._password)
-        assert(new_folder[name]._passwordManagerName == old_folder[name]._passwordManagerName)
-        del old_folder[name]
-        if len(old_folder.values()) == 0:
-            still_in_old_folder = False
-    
-    del pau['signup_principal_folder']
-
-    if 1 == 0:
-        raise Exception
+        _source = zope.component.createObject(
+            getattr(obj, source_type),
+            getattr(obj, source))
+        renderer = IHTMLRenderer(_source)
         
+        if getattr(obj, source_type) == 'rest':
+            return renderer.render()
 
+        if getattr(obj, source_type) == 'plaintext':
+            rc = u"<p>"
+            rc += renderer.render().strip()
+            rc += u"</p>"
+            rc = rc.replace('<br />', '</p>\n<p>')
+            rc = rc.replace('<br/>', '</p>\n<p>')
+            return rc
 
+    i = 0
+    for example in findObjectsProviding(site, IExample):
+        example.quotation = cookHTMLSource(example, source = 'quotation')
+        example.source_type = 'html'
+        i += 1
 
-        
+    for comment in findObjectsProviding(site, IComment):
+        comment.comment = cookHTMLSource(comment, source = 'comment')
+        comment.source_type = 'html'
 
+    if 1 == 2:
+        raise Exception(i)
