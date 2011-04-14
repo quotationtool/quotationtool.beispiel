@@ -23,7 +23,7 @@
 	    ><img 
 	    src="images/logo-tu.png"
 	    alt="Technische Universität Dortmund"
-	    tal:attributes="src string:++resource++beispiel.images/logo_tu.png"
+	    tal:attributes="src string:/@@/beispiel.images/logo_tu.png"
 	    /></a>
 	<h1 class="header-right"
 	    ><a href="/" 
