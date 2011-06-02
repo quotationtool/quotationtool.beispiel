@@ -45,6 +45,7 @@
   <include package="quotationtool.figuresng" file="roles.zcml"/>
   <include package="quotationtool.commentary" file="roles.zcml"/>
   <include package="quotationtool.user" file="roles.zcml"/>
+  <include package="quotationtool.editorial" file="roles.zcml"/>
 
   <grant
       role="quotationtool.Visitor"
