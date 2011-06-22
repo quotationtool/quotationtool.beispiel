@@ -14,6 +14,6 @@ from zope.app.generations.generations import SchemaManager
 
 BeispielSchemaManager = SchemaManager(
     minimum_generation = 5,
-    generation = 9,
+    generation = 10,
     package_name = 'beispiel.generations',
     )
