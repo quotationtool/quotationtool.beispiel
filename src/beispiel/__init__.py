@@ -12,6 +12,7 @@ from quotationtool.figuresng.example import Example
 from quotationtool.biblatex.biblatexentry import BiblatexEntry
 from quotationtool.commentary.interfaces import ICommentable
 from quotationtool.categorization.interfaces import ICategorizable
+from quotationtool.quotation.interfaces import IReference
 
 # relation precondition for comments
 classImplements(BiblatexEntry, ICommentable)
@@ -21,12 +22,16 @@ classImplements(Example, ICommentable)
 classImplements(BiblatexEntry, ICategorizable)
 classImplements(Example, ICategorizable)
 
+# relation precondition for quotations
+classImplements(BiblatexEntry, IReference)
 
-# BBB: remove in 0.2.0
-from quotationtool.referatory.uniformtitle import UniformTitle
-from quotationtool.referatory.reference import Reference
-from quotationtool.bibliography.interfaces import IEntry
-classImplements(Reference, ICommentable)
-classImplements(Reference, IEntry)
-classImplements(UniformTitle, ICategorizable)
-classImplements(Reference, ICategorizable)
+
+from quotationtool.search.searcher import QuotationtoolSearchFilter
+from quotationtool.figuresng.searcher import IExampleSearchFilter
+from quotationtool.bibliography.searcher import IBibliographySearchFilter
+from quotationtool.quotation.searcher import IQuotationSearchFilter
+
+classImplements(QuotationtoolSearchFilter, IExampleSearchFilter)
+classImplements(QuotationtoolSearchFilter, IBibliographySearchFilter)
+classImplements(QuotationtoolSearchFilter, IQuotationSearchFilter)
+ 

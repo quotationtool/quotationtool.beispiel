@@ -42,10 +42,11 @@
   <include package="quotationtool.security" file="roles.zcml"/>
   <include package="quotationtool.bibliography" file="roles.zcml"/>
   <include package="quotationtool.categorization" file="roles.zcml"/>
-  <include package="quotationtool.figuresng" file="roles.zcml"/>
+  <include package="quotationtool.quotation" file="roles.zcml"/>
   <include package="quotationtool.commentary" file="roles.zcml"/>
   <include package="quotationtool.user" file="roles.zcml"/>
   <include package="quotationtool.editorial" file="roles.zcml"/>
+  <include package="quotationtool.search" file="roles.zcml"/>
 
   <grant
       role="quotationtool.Visitor"

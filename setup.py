@@ -85,6 +85,7 @@ setup(
         'zope.login',
         'zope.app.zcmlfiles',
         'zope.app.zopeappgenerations',
+        'z3c.indexer',
 
         # quotationtool:
         'quotationtool.site',
