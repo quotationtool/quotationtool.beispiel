@@ -32,7 +32,7 @@ class YearViewBSP(YearView):
         if origyear:
             years = IBiblatexEntry['origdate'].extractYears(origyear)
             if years[0] != years[1]:
-                i18n_string = _('year-range', u"$lower ... $upper",
+                i18n_string = _('year-range', u"$lower...$upper",
                                 mapping =  {'lower': unicode(years[0]), 
                                             'upper':unicode(years[1])})
                 rc += translate(i18n_string, context=self.request) + u" "
