@@ -32,6 +32,7 @@
   <include package="quotationtool.user"/>
   <include package="quotationtool.locales"/>
   <include package="quotationtool.editorial"/>
+  <include package="quotationtool.workflow"/>
 
   <!-- roles.zcml files are included from securitypolicy.zcml -->
 

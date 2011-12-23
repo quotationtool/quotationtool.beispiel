@@ -47,6 +47,7 @@
   <include package="quotationtool.user" file="roles.zcml"/>
   <include package="quotationtool.editorial" file="roles.zcml"/>
   <include package="quotationtool.search" file="roles.zcml"/>
+  <include package="quotationtool.workflow" file="roles.zcml"/>
 
   <grant
       role="quotationtool.Visitor"

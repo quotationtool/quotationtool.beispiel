@@ -35,3 +35,10 @@ classImplements(QuotationtoolSearchFilter, IExampleSearchFilter)
 classImplements(QuotationtoolSearchFilter, IBibliographySearchFilter)
 classImplements(QuotationtoolSearchFilter, IQuotationSearchFilter)
  
+
+
+from quotationtool.workflow.interfaces import IRemovable
+from quotationtool.workflow.interfaces import IHasWorkflowHistory
+
+classImplements(Example, IRemovable)
+classImplements(Example, IHasWorkflowHistory)

@@ -101,6 +101,7 @@ setup(
         'quotationtool.categorization',
         'quotationtool.user',
         'quotationtool.locales',
+        'quotationtool.workflow',
         
         #BBB: remove in 0.2.0
         'quotationtool.referatory',
