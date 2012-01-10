@@ -36,9 +36,21 @@ classImplements(QuotationtoolSearchFilter, IBibliographySearchFilter)
 classImplements(QuotationtoolSearchFilter, IQuotationSearchFilter)
  
 
+# Workflow
 
-from quotationtool.workflow.interfaces import IRemovable
 from quotationtool.workflow.interfaces import IHasWorkflowHistory
+from quotationtool.workflow.interfaces import IRemovable
+from quotationtool.workflow.interfaces import ISubjectOfMessage
 
-classImplements(Example, IRemovable)
 classImplements(Example, IHasWorkflowHistory)
+classImplements(Example, IRemovable)
+classImplements(Example, ISubjectOfMessage)
+
+classImplements(BiblatexEntry, IHasWorkflowHistory)
+classImplements(BiblatexEntry, IRemovable)
+classImplements(BiblatexEntry, ISubjectOfMessage)
+
+from quotationtool.commentary.comment import Comment
+classImplements(Comment, IHasWorkflowHistory)
+classImplements(Comment, IRemovable)
+classImplements(Comment, ISubjectOfMessage)
