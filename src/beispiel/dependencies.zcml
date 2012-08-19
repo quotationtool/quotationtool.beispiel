@@ -22,6 +22,7 @@
   <include package="quotationtool.renderer"/>
   <include package="quotationtool.search"/>
   <include package="quotationtool.categorization"/>
+  <include package="quotationtool.categorization" file="subscriber.zcml"/>
   <include package="quotationtool.bibliography"/>
   <include package="quotationtool.biblatex"/>
   <include package="quotationtool.biblatex" file="latex.zcml"/>

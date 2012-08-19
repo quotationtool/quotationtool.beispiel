@@ -30,11 +30,20 @@ from quotationtool.search.searcher import QuotationtoolSearchFilter
 from quotationtool.figuresng.searcher import IExampleSearchFilter
 from quotationtool.bibliography.searcher import IBibliographySearchFilter
 from quotationtool.quotation.searcher import IQuotationSearchFilter
+from quotationtool.categorization.interfaces import IAttributionSearchFilter
 
 classImplements(QuotationtoolSearchFilter, IExampleSearchFilter)
 classImplements(QuotationtoolSearchFilter, IBibliographySearchFilter)
 classImplements(QuotationtoolSearchFilter, IQuotationSearchFilter)
- 
+classImplements(QuotationtoolSearchFilter, IAttributionSearchFilter)
+
+from quotationtool.figuresng.searcher import ExampleSearchFilter
+from quotationtool.bibliography.searcher import BibliographySearchFilter
+from quotationtool.quotation.searcher import QuotationSearchFilter
+classImplements(ExampleSearchFilter, IAttributionSearchFilter)
+classImplements(BibliographySearchFilter, IAttributionSearchFilter)
+classImplements(QuotationSearchFilter, IAttributionSearchFilter)
+
 
 # Workflow
 
