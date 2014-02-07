@@ -83,14 +83,14 @@
   <p>
     2013 im diaphanes-Verlag erschienen ist der Band <i>Archiv des
     Beispiels. Vorarbeiten und Überlegungen</i>.
-
-    <div>
-      <img 
-	  src="images/diaphanes.jpg"
-	  alt="Umschlagbild"
-	  tal:attributes="src string:/@@/beispiel.images/diaphanes.jpg"
-	  />
-    </div>
   </p>
+  
+  <div>
+    <img 
+	src="images/diaphanes.jpg"
+	alt="Umschlagbild"
+	tal:attributes="src string:/@@/beispiel.images/diaphanes.jpg"
+	/>
+  </div>
 
 </div>
