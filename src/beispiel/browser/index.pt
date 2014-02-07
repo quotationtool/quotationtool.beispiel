@@ -74,10 +74,23 @@
   
   <div i18n:translate="frontpage-syndicat">
     <p>
-      Die Betreiber: <br/><br/> Christian Lück<br/>Peter
+      Die Betreiber: <br/><br/>Christian Lück<br/>Jessica Güsken<br/>Peter
       Risthaus<br/>Michael Niehaus<br/> Lars Bullmann<br/>Manfred
       Schneider
     </p>
   </div>
+
+  <p>
+    2013 im diaphanes-Verlag erschienen ist der Band <i>Archiv des
+    Beispiels. Vorarbeiten und Überlegungen</i>.
+
+    <div>
+      <img 
+	  src="images/diaphanes.jpg"
+	  alt="Umschlagbild"
+	  tal:attributes="src string:/@@/beispiel.images/diaphanes.jpg"
+	  />
+    </div>
+  </p>
 
 </div>
