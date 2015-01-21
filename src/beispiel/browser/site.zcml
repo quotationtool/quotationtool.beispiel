@@ -2,6 +2,7 @@
     xmlns='http://namespaces.zope.org/browser'
     xmlns:zope='http://namespaces.zope.org/zope'
     xmlns:z3c='http://namespaces.zope.org/z3c'
+    xmlns:browser='http://namespaces.zope.org/browser'
     i18n_domain='beispiel'>
 
   <zope:view
@@ -23,6 +24,24 @@
       for=".site.Frontpage"
       template="index.pt"
       layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+  <browser:viewletManager
+      name="frontpage"
+      class=".site.FrontpageManager"
+      provides="..interfaces.IFrontpage"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+
+  <browser:viewlet
+      name="beispiel.browser.site.Projects"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      manager="..interfaces.IFrontpage"
+      class=".site.Projects"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      weight="500"
       />
 
 </configure>

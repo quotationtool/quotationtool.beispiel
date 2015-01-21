@@ -1,6 +1,7 @@
 import zope.interface
 from z3c.formui.interfaces import IDivFormLayer
 from zope.i18nmessageid import MessageFactory
+from zope.viewlet.interfaces import IViewletManager
 
 from quotationtool.skin.interfaces import IQuotationtoolBrowserLayer, IQuotationtoolBrowserSkin
 
@@ -26,3 +27,5 @@ class IRandomExample(zope.interface.Interface):
         """Returns an example."""
 
 
+class IFrontpage(IViewletManager):
+    """A viewlet manager for the frontpage. """

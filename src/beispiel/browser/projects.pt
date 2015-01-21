@@ -1,0 +1,13 @@
+<div i18n:domain="quotationtool.beispiel">
+
+  <div class="projects">
+    <h2 i18n:translate="">Projects</h2>
+  
+    <div tal:repeat="project context/categories/Projekt">
+      <h3 tal:content="project/title|default">Projektname nicht verfügbar</h3>
+      <div tal:content="project/description|default">Beschreibung nicht verfügbar</div>
+    </div>
+
+  </div>
+
+</div>
