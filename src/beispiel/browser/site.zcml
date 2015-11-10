@@ -55,4 +55,13 @@
       weight="500"
       />
 
+  <z3c:pagelet
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      name="search.html"
+      class="quotationtool.search.browser.searcher.SearchForm"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="quotationtool.search.Search"
+      filterFactoryName="quotationtool.figuresng.searcher.ExampleSearchFilter"
+      />
+
 </configure>
