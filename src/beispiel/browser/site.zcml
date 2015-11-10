@@ -35,6 +35,17 @@
       />
 
   <browser:viewlet
+      name="beispiel.browser.SimpleSearch"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      manager="..interfaces.IFrontpage"
+      class="quotationtool.search.browser.searcher.SimpleSearchViewlet"
+      filterFactoryName="quotationtool.figuresng.searcher.ExampleSearchFilter"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      weight="100"
+      />
+
+  <browser:viewlet
       name="beispiel.browser.site.Projects"
       for="quotationtool.site.interfaces.IQuotationtoolSite"
       manager="..interfaces.IFrontpage"
