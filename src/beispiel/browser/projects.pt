@@ -1,14 +1,20 @@
-<div i18n:domain="quotationtool.beispiel">
+<div i18n:domain="quotationtool.beispiel" class="projects"
+     tal:attributes="class view/klass|default">
 
-  <div class="projects">
+  <div class="projects-wrapper2">
     <h2 i18n:translate="">Projects</h2>
   
     <div tal:repeat="project context/categories/Projekt/values">
       <h3 tal:content="project/title|default">Projektname nicht verfügbar</h3>
-      <div tal:content="structure project/long_description|default">
+      <div tal:content="structure project/@@long_description|default">
         <div tal:content="structure project/description|default">
 	  Beschreibung nicht verfügbar
 	</div>
+      </div>
+      <div class="more-link">
+	<a href="categories/Projekt/Heideggers Beispiele/long_description.html"
+	   tal:attributes="href string:${project/@@absolute_url}/long_description.html"
+	   i18n:translate="more-link">[more]</a>
       </div>
     </div>
 
