@@ -55,6 +55,16 @@
       weight="500"
       />
 
+  <browser:viewlet
+      name="beispiel.browser.site.Publications"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      manager="..interfaces.IFrontpage"
+      template="publications.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      weight="600"
+      />
+
   <z3c:pagelet
       for="quotationtool.site.interfaces.IQuotationtoolSite"
       name="search.html"

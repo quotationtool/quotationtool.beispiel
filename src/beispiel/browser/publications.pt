@@ -1,0 +1,20 @@
+<div i18n:domain="quotationtool.beispiel" class="publications"
+     tal:attributes="class view/klass|default">
+
+  <h2>Publikationen</h2>
+
+  <p>
+    2013 im diaphanes-Verlag erschienen ist der Band <i>Archiv des
+    Beispiels. Vorarbeiten und Überlegungen</i>.
+  </p>
+  
+  <div>
+    <img
+	style="border:1px solid #a9bcd5;"
+	src="images/diaphanes.jpg"
+	alt="Umschlagbild"
+	tal:attributes="src string:/@@/beispiel.images/diaphanes.jpg"
+	/>
+  </div>
+
+</div>
