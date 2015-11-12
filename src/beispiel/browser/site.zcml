@@ -49,7 +49,7 @@
       name="beispiel.browser.site.Projects"
       for="quotationtool.site.interfaces.IQuotationtoolSite"
       manager="..interfaces.IFrontpage"
-      class=".site.Projects"
+      template="projects.pt"
       layer="..interfaces.IBeispielBrowserLayer"
       permission="zope.View"
       weight="500"

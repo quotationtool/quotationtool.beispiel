@@ -4,7 +4,7 @@
   <div class="projects-wrapper2">
     <h2 i18n:translate="">Projects</h2>
   
-    <div tal:repeat="project context/categories/Projekt/values">
+    <div tal:repeat="project python:sorted([p for p in context['categories']['Projekt'].values() if p.weight<=1000], cmp=lambda x, y: cmp(x.weight, y.weight))">
       <h3 tal:content="project/title|default">Projektname nicht verfügbar</h3>
       <div tal:content="structure project/@@long_description|default">
         <div tal:content="structure project/description|default">

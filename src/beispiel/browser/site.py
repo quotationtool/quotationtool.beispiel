@@ -32,9 +32,3 @@ FrontpageManager = ViewletManager('frontpage',
                                   bases = (WeightOrderedViewletManager,))
 
 
-class Projects(ViewletBase):
-    
-    template = ViewPageTemplateFile('projects.pt')
-    
-    def render(self):
-        return self.template()
