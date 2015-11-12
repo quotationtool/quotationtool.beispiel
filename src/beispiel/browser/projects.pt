@@ -3,9 +3,13 @@
   <div class="projects">
     <h2 i18n:translate="">Projects</h2>
   
-    <div tal:repeat="project context/categories/Projekt">
+    <div tal:repeat="project context/categories/Projekt/values">
       <h3 tal:content="project/title|default">Projektname nicht verfügbar</h3>
-      <div tal:content="project/description|default">Beschreibung nicht verfügbar</div>
+      <div tal:content="structure project/long_description|default">
+        <div tal:content="structure project/description|default">
+	  Beschreibung nicht verfügbar
+	</div>
+      </div>
     </div>
 
   </div>
