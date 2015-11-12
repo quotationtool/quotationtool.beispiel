@@ -1,5 +1,5 @@
 <div i18n:domain="quotationtool.beispiel">
 
-  <div tal:content="structure provider:frontpage"/>
+  <div class="frontpage-provider" tal:content="structure provider:frontpage"/>
 
 </div>
