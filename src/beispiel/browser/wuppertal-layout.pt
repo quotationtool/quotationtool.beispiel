@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<metal:block 
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    define-macro="wuppertal-layout">
+  <metal:macro use-macro="macro:quotationtool-layout">
+    
+    <metal:slot fill-slot="title">
+      <title>Archiv des Beispiels</title>
+    </metal:slot>
+
+    <metal:slot fill-slot="html-head-extension">
+      <tal:block replace="resource_library:wuppertal.css"/>
+    </metal:slot>		 
+
+    <metal:slot fill-slot="header">
+      <div class="header-columns">
+	<a class="header-logo"
+	    href="http://www.archiv-des-beispiels.de"
+	    tal:attributes="href request/URL/0"
+	    ><img 
+	    src="images/arb-header.png"
+	    alt="Archiv des Beispiels"
+	    tal:attributes="src string:${request/URL/0}/@@/wuppertal.images/arb-header.png"
+	    /></a>
+	<!--h1 class="header-right"
+	    ><a href="/" 
+		tal:attributes="href request/URL/0"
+		>Archiv des Beispiels</a></h1>
+	<br class="cleaner"/-->
+      </div>
+    </metal:slot>
+    
+    <metal:slot fill-slot="content">
+      <metal:slot define-slot="wuppertal-content">
+      <div id="content">
+	<div tal:content="structure provider:pagelet"/>
+      </div>
+      </metal:slot>
+    </metal:slot>
+
+  </metal:macro>
+</metal:block>

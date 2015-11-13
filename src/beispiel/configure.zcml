@@ -19,6 +19,13 @@
       name="Beispiel"
       />
 
+  <!-- wuppertal skin -->
+  <interface
+      interface=".interfaces.IWuppertalBrowserSkin"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Wuppertal"
+      />
+
   <class class=".day.ExampleOfDay">
     <allow
 	interface=".interfaces.IRandomExample"/>

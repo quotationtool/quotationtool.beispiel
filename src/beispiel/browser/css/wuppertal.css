@@ -1,0 +1,50 @@
+/* css adaptations for the 'archiv des beispiels' application */
+
+#header {
+    color: #649600;
+}
+
+#header .header-logo img {
+    width: 15em;
+}
+
+#header .header-left {
+    display: block;
+    float: left;
+}
+
+#header .header-right {
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#header a,
+#header a:hover,
+#header a:visited {
+    color: #649600;
+    text-decoration: none;
+}
+
+/*
+#mainnav li li.selected {
+    color:#649600;
+}
+#bgmainnav {
+    background-color:#649600;
+}
+*/
+
+.frontpage-provider {
+    /*border:1px solid red;*/
+}
+
+.frontpage-provider div {
+    margin-bottom: 10px;
+    /*border:1px solid green;*/
+    border-bottom:1px solid #a9bcd5;
+}
+.frontpage-provider div div {
+    border: none;
+}
