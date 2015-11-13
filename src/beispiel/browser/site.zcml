@@ -26,6 +26,19 @@
       layer="..interfaces.IBeispielBrowserLayer"
       />
 
+  <z3c:pagelet
+      name="idee.html"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      class=".site.IdeePagelet"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".site.IdeePagelet"
+      template="idee.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
   <browser:viewletManager
       name="frontpage"
       class=".site.FrontpageManager"
@@ -65,6 +78,16 @@
       weight="600"
       />
 
+  <browser:viewlet
+      name="beispiel.browser.site.Idee"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      manager="..interfaces.IFrontpage"
+      template="idee-snippet.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      weight="50"
+      />
+  
   <z3c:pagelet
       for="quotationtool.site.interfaces.IQuotationtoolSite"
       name="search.html"

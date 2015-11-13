@@ -32,3 +32,6 @@ FrontpageManager = ViewletManager('frontpage',
                                   bases = (WeightOrderedViewletManager,))
 
 
+class IdeePagelet(BrowserPagelet):
+    """ A pagelet for the page describing the idea of Archiv des
+    Beispiels."""

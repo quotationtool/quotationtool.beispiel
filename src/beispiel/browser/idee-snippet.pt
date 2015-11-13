@@ -1,0 +1,13 @@
+<div class="idee" i18n:domain="quotationtool.beispiel">
+  <p>
+    Kein wissenschaftlicher Diskurs kommt ohne Beispiele aus. Diese
+    Internetdatenbank ist ein im Aufbau befindliches Werkzeug zur
+    Erfassung von Beispielen zu ihrer Erforschung.
+    <a class="more-link"
+       href="idee.html"
+       attributes="href string:${context/@@absolute_url}/idee.html"
+       i18n:translate="more-link"
+       >[more]</a>
+  </p>
+</div>
+
