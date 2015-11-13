@@ -35,5 +35,39 @@
       layer="..interfaces.IBeispielBrowserLayer"
       />
 
+  
+  <!-- Wuppertal layout, design by Gregor Eisenmann -->
+  
+  <z3c:layout
+      for="*"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      template="wuppertal-layout.pt"
+      />
+  <z3c:macro
+      name="wuppertal-layout"
+      macro="wuppertal-layout"
+      template="wuppertal-layout.pt"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      />
+  <z3c:layout
+      for="quotationtool.skin.interfaces.ITabbedContentLayout"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      template="wuppertal-layout_tabbedcontent.pt"
+      />
+
+  <zope:resourceLibrary
+      layer="..interfaces.IWuppertalBrowserLayer"
+      name="wuppertal.css">
+    <zope:directory
+	source="css"
+	include="wuppertal.css"
+	/>
+  </zope:resourceLibrary>
+  <resourceDirectory
+      name="wuppertal.images"
+      directory="images"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      />
+
 
 </configure>

@@ -19,6 +19,16 @@ class IBeispielBrowserSkin(IBeispielBrowserLayer,
     """ The browser skin for the beispiel application."""
 
 
+class IWuppertalBrowserLayer(IBeispielBrowserLayer):
+    """ The browser layer for the beispiel application inherits the
+    quotationtool browser layer."""
+
+
+class IWuppertalBrowserSkin(IWuppertalBrowserLayer,
+                           IDivFormLayer):
+    """The 'wuppertal' browser skin for the beispiel application."""
+
+
 class IRandomExample(zope.interface.Interface):
     """The getExample() method returns randomly picked example. This
     interface may be implemented by nice utilities."""
