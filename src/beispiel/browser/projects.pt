@@ -6,13 +6,15 @@
   
     <div tal:repeat="project python:sorted([p for p in context['categories']['Projekt'].values() if p.weight<=1000], cmp=lambda x, y: cmp(x.weight, y.weight))">
       <h3 tal:content="project/title|default">Projektname nicht verfügbar</h3>
-      <div tal:content="structure project/@@long_description|default">
-        <div tal:content="structure project/description|default">
-	  Beschreibung nicht verfügbar
+      <div class="limited-rendering">
+	<div class="limited-rendering-text"
+	     tal:content="structure project/@@long_description|default">
+          <div tal:replace="structure project/description|default">
+	    Beschreibung nicht verfügbar
+	  </div>
 	</div>
-      </div>
-      <div class="more-link">
-	<a href="categories/Projekt/Heideggers Beispiele/long_description.html"
+	<a class="limited-rendering-link more-link"
+	   href="categories/Projekt/Heideggers Beispiele/long_description.html"
 	   tal:attributes="href string:${project/@@absolute_url}/long_description.html"
 	   i18n:translate="more-link">[more]</a>
       </div>
