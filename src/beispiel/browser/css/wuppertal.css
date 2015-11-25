@@ -1,16 +1,106 @@
 /* css adaptations for the 'archiv des beispiels' application */
 
+#wrapper {
+    padding: 20px;
+}
+
+#wrapper2 {
+    margin: 0 auto;
+    width: 1007px;
+    box-shadow: 0 0 10px grey;
+    -webkit-box-shadow: 0 0 10px grey;
+}
+
+#content-wrapper {
+    background: url(++resource++beispiel.images/content-bg.png);
+}
+
+/* Boxen hell: #e7e7e7; (#dae5f0;)
+   Boxen dunkel: #afafaf; (#ffff00;)
+*/
+
+#contentlabel,
+.wizard .header {
+    background-color: #e7e7e7;
+}
+
+#bgmainnav {
+    background-color: #afafaf;
+}
+
+.current-editorial-status,
+.wizard .viewspace .form-info,
+.edit-form .viewspace .form-info,
+fieldset.attribution-subform legend,
+#search-categories fieldset legend,
+.edit-form .viewspace .similar-work-items,
+.edit-form .viewspace .workitem-relations,
+.edit-form .viewspace .workitem-object,
+.edit-form .viewspace .workitem-workflow-history,
+.workflow .history .description,
+fieldset.attribution-subform {
+    border-color: #e7e7e7;
+}
+
+#contentlabel,
+#bgmainnav,
+#content,
+#tabbedcontent,
+.wizard,
+.wizard .viewspace .label,
+.edit-form .viewspace .label,
+#itemtabs li a,
+div.category-long-description div.long_description-footer,
+.revision-history hr,
+hr.commentary-ruler {
+    border-color: #c2c7cd;
+}
+
+#content {
+    background-color: white;
+}
+
+
 #header {
+    position: relative;
+    margin: 0;
+    min-height: 95px;
     color: #649600;
 }
 
+#header-head-ruler {
+    position: absolute;
+    background-color: orange;
+    top: 0;
+    width: 67%;
+    height: 4px;
+}
+
+#header .header-columns {
+    position: relative;
+}
+
+#header .header-logo {
+    display: block;
+    float: right;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
 #header .header-logo img {
-    width: 15em;
+    height: 70px;
 }
 
 #header .header-left {
     display: block;
     float: left;
+    width: *;
+    padding-left: 25px;
+    padding-top: 21px;
+    color: #fceade;
+    font-size: 20pt;
+    font-weight: 900;
+    line-height: 1;
 }
 
 #header .header-right {
@@ -43,8 +133,12 @@
 .frontpage-provider div {
     margin-bottom: 10px;
     /*border:1px solid green;*/
-    border-bottom:1px solid #a9bcd5;
+    border-bottom: 1px solid #c2c7cd;
 }
 .frontpage-provider div div {
     border: none;
+}
+
+.publication-cover {
+    border:1px solid #c2c7cd;
 }
