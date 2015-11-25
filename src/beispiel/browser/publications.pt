@@ -10,7 +10,7 @@
   
   <div>
     <img
-	style="border:1px solid #a9bcd5;"
+	class="publication-cover"
 	src="images/diaphanes.jpg"
 	alt="Umschlagbild"
 	tal:attributes="src string:/@@/beispiel.images/diaphanes.jpg"

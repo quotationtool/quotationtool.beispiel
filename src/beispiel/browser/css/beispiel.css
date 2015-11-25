@@ -44,3 +44,7 @@
 .frontpage-provider div div {
     border: none;
 }
+
+.publication-cover {
+    border:1px solid #a9bcd5;
+}

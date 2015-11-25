@@ -17,7 +17,9 @@
     </metal:slot>		 
 
     <metal:slot fill-slot="header">
+      <div id="header-head-ruler">&nbsp;</div>
       <div class="header-columns">
+	<span class="header-left">Datenbank zur Erforschung des<br/>Beispielgebrauchs in der Moderne</span>
 	<a class="header-logo"
 	    href="http://www.archiv-des-beispiels.de"
 	    tal:attributes="href request/URL/0"
@@ -29,8 +31,8 @@
 	<!--h1 class="header-right"
 	    ><a href="/" 
 		tal:attributes="href request/URL/0"
-		>Archiv des Beispiels</a></h1>
-	<br class="cleaner"/-->
+		>Archiv des Beispiels</a></h1-->
+	<br class="cleaner"/>
       </div>
     </metal:slot>
     
