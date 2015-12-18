@@ -71,7 +71,8 @@
   <browser:viewlet
       name="beispiel.browser.site.Publications"
       for="quotationtool.site.interfaces.IQuotationtoolSite"
-      manager="..interfaces.IFrontpage"
+      manager="quotationtool.skin.interfaces.ISidePanel"
+      view=".site.Frontpage"
       template="publications.pt"
       layer="..interfaces.IBeispielBrowserLayer"
       permission="zope.View"

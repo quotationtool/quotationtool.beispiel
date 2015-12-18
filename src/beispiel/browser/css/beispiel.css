@@ -1,3 +1,4 @@
+/* <![CDATA[ */ 
 /* css adaptations for the 'archiv des beispiels' application */
 
 #header {
@@ -32,15 +33,17 @@
 }
 */
 
-.frontpage-provider {
-    /*border:1px solid red;*/
-}
-
 .frontpage-provider div {
     margin-bottom: 10px;
-    /*border:1px solid green;*/
     border-bottom:1px solid #a9bcd5;
 }
 .frontpage-provider div div {
     border: none;
 }
+
+.publication-cover {
+    width: 12em;
+    border:1px solid #a9bcd5;
+    margin-top: 10px;
+}
+/* ]]> */
