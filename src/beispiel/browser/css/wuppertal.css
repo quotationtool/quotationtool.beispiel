@@ -200,25 +200,25 @@ hr.commentary-ruler {
     border: 1px solid #c2c7cd;
 }
 
-#search {
+.frontpage-provider #search {
     height:240px;
     position:relative;
 }
 
-#search h1 {display:none;}
+.frontpage-provider #search h1 {display:none;}
 
-#search #search-form {
+.frontpage-provider #search #search-form {
     position:absolute;
     top:50%;
     padding-bottom:20px;
     transform: translateY(-50%);
 }
 
-#search tr {
+.frontpage-provider #search tr {
     display: inline;
 }
 
-#search button {
+.frontpage-provider #search button {
     background-color: #fff;
     border: 0;
     color: #f39136;
