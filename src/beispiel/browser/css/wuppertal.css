@@ -12,11 +12,9 @@ body {
 
 #wrapper2 {
     margin: 0 auto;
-    position: relative;
     width: 987px;
     box-shadow: 0 0 10px grey;
     -webkit-box-shadow: 0 0 10px grey;
-    z-index: -2;
     background: url(++resource++beispiel.images/content-bg.png);
 }
 
@@ -27,19 +25,31 @@ body {
 {background-color: white;}
 
 /* durch overflow:hidden; in #mainnav verschwindet die subnav;
-stattdessen verwenden wir #login-link um Bereich rechts neben der
-#mainnav ohne Hintergrund-Muster zu erhalten. */
+stattdessen verwenden wir #login-link und z-index, um den Bereich
+rechts neben der #mainnav ohne Hintergrund-Muster zu halten. */
+#mainnav ul {
+    position: relative;
+    z-index: 3;
+}
+#mainnav ul ul {
+    z-index: 3;
+}
+#bgmainnav {
+    position: relative;
+    z-index: 2;
+}
 #mainnav #login-link {
     float: none;
     display: block;
     position:absolute;
     width: 100%;
     background-color: white;
-    z-index: -1;
+    z-index: 1;
     padding: 0;
     font-size: 1.5em;
     border: 0;
 }
+
 
 /* Boxen hell: e7e7e7 (dae5f0)
    Boxen dunkel: afafaf (ffff00)
