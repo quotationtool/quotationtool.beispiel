@@ -35,6 +35,8 @@
 	<br class="cleaner"/>
       </div>
     </metal:slot>
+
+    <div id="login-link" metal:fill-slot="login-link">&nbsp;</div>
     
     <metal:slot fill-slot="content">
       <metal:slot define-slot="wuppertal-content">

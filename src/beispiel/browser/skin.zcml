@@ -69,5 +69,21 @@
       layer="..interfaces.IWuppertalBrowserLayer"
       />
 
+  <!-- overriding images from quotationtool -->
+  <resourceDirectory
+      name="quotationtool.images"
+      directory="reimages"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      />
+
+  <z3c:siteMenuItem
+      for="*"
+      name="login"
+      class="quotationtool.skin.browser.login.LoginMenuItem"
+      permission="zope.View"
+      layer="..interfaces.IWuppertalBrowserLayer"
+      manager="quotationtool.skin.interfaces.IOtherNav"
+      weight="10"
+      />
 
 </configure>

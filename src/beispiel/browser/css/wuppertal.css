@@ -1,4 +1,10 @@
+/* <![CDATA[ */ 
+
 /* css adaptations for the 'archiv des beispiels' application */
+
+body {
+    background: #ebe5d9;
+}
 
 #wrapper {
     padding: 20px;
@@ -6,20 +12,48 @@
 
 #wrapper2 {
     margin: 0 auto;
-    width: 1007px;
+    position: relative;
+    width: 987px;
     box-shadow: 0 0 10px grey;
     -webkit-box-shadow: 0 0 10px grey;
-}
-
-#content-wrapper {
+    z-index: -2;
     background: url(++resource++beispiel.images/content-bg.png);
 }
 
-/* Boxen hell: #e7e7e7; (#dae5f0;)
-   Boxen dunkel: #afafaf; (#ffff00;)
+#content,
+#header,
+#mainnav,
+.sidepanel-component
+{background-color: white;}
+
+/* durch overflow:hidden; in #mainnav verschwindet die subnav;
+stattdessen verwenden wir #login-link um Bereich rechts neben der
+#mainnav ohne Hintergrund-Muster zu erhalten. */
+#mainnav #login-link {
+    float: none;
+    display: block;
+    position:absolute;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    padding: 0;
+    font-size: 1.5em;
+    border: 0;
+}
+
+/* Boxen hell: e7e7e7 (dae5f0)
+   Boxen dunkel: afafaf (ffff00)
+   Orange: f39136
 */
 
+a:link, a:visited {color:#f39136; text-decoration:none;}
+a:hover { color: #f39136; text-decoration:underline;}
+a:active { color: #034ea2; }
+
+#othernav a:link {text-decoration: underline;}
+
 #contentlabel,
+.sidepanel-label,
 .wizard .header {
     background-color: #e7e7e7;
 }
@@ -42,10 +76,16 @@ fieldset.attribution-subform {
     border-color: #e7e7e7;
 }
 
+#mainnav li.selected .active {
+    border-color: #afafaf;
+}
+
 #contentlabel,
 #bgmainnav,
 #content,
 #tabbedcontent,
+.sidepanel-content,
+.sidepanel-label,
 .wizard,
 .wizard .viewspace .label,
 .edit-form .viewspace .label,
@@ -56,11 +96,6 @@ hr.commentary-ruler {
     border-color: #c2c7cd;
 }
 
-#content {
-    background-color: white;
-}
-
-
 #header {
     position: relative;
     margin: 0;
@@ -70,10 +105,18 @@ hr.commentary-ruler {
 
 #header-head-ruler {
     position: absolute;
-    background-color: orange;
+    background-color: #f39136;
     top: 0;
-    width: 67%;
+    width: 72%;
     height: 4px;
+}
+
+#content-wrapper:nth-child(7) {
+    width: 72%;
+}
+
+#sidepanel-wrapper {
+    width: 28%;
 }
 
 #header .header-columns {
@@ -135,10 +178,47 @@ hr.commentary-ruler {
     /*border:1px solid green;*/
     border-bottom: 1px solid #c2c7cd;
 }
+.frontpage-provider div:last-child,
 .frontpage-provider div div {
     border: none;
 }
 
 .publication-cover {
-    border:1px solid #c2c7cd;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 12em;
+    border: 1px solid #c2c7cd;
 }
+
+#search {
+    height:240px;
+    position:relative;
+}
+
+#search h1 {display:none;}
+
+#search #search-form {
+    position:absolute;
+    top:50%;
+    padding-bottom:20px;
+    transform: translateY(-50%);
+}
+
+#search tr {
+    display: inline;
+}
+
+#search button {
+    background-color: #fff;
+    border: 0;
+    color: #f39136;
+    font-size: 1.4em;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-family: sans-serif;
+    vertical-align: bottom;
+}
+
+
+/* ]]> */
