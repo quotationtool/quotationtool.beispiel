@@ -1,4 +1,4 @@
-<div>
+<div i18n:domain="quotationtool.beispiel">
 
   <h1 i18n:translate="">Welcome to <i>Archiv des Beispiels</i></h1>
 

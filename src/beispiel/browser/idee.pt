@@ -1,7 +1,7 @@
 <div i18n:domain="quotationtool.beispiel">
-  <h1>Archiv des Beispiels</h1>
+  <h1>Das Projekt</h1>
 
-  <div i18n:translate="frontpage-intro">
+  <div>
 
   <p>
     Diese Internetdatenbank ist ein im Aufbau befindliches Werkzeug
