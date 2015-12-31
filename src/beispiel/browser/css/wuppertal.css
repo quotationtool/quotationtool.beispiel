@@ -21,7 +21,8 @@ body {
 #content,
 #header,
 #mainnav,
-.sidepanel-component
+.sidepanel-component,
+#tabbedcontent
 {background-color: white;}
 
 /* durch overflow:hidden; in #mainnav verschwindet die subnav;
