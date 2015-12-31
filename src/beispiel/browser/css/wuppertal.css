@@ -230,5 +230,17 @@ hr.commentary-ruler {
     vertical-align: bottom;
 }
 
+#footer a:link, #footer a:visited {
+    color: #afafaf;
+    margin-right: 3px;
+    padding-right: 5px;
+    border-right: 1px solid #afafaf;
+}
+
+#footer a:link:last-child {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
 
 /* ]]> */

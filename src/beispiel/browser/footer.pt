@@ -1,0 +1,8 @@
+<tal:block i18n:domain="beispiel">
+  <a href="/impressum.html"
+     tal:attributes="href string:${context/@@absolute_url}/impressum.html"
+     >Imprint</a>
+  <a href="/kontakt.html"
+     tal:attributes="href string:${context/@@absolute_url}/kontakt.html"
+     >Contact</a>
+</tal:block>

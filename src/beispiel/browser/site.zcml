@@ -98,4 +98,45 @@
       filterFactoryName="quotationtool.figuresng.searcher.ExampleSearchFilter"
       />
 
+  <zope:view
+      name="footerInfo"
+      for="*"
+      factory=".site.Footer"
+      type="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".site.Footer"
+      template="footer.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+  <z3c:pagelet
+      name="kontakt.html"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      class=".site.ContactPagelet"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".site.ContactPagelet"
+      template="contact.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+  <z3c:pagelet
+      name="impressum.html"
+      for="quotationtool.site.interfaces.IQuotationtoolSite"
+      class=".site.ImprintPagelet"
+      layer="..interfaces.IBeispielBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".site.ImprintPagelet"
+      template="imprint.pt"
+      layer="..interfaces.IBeispielBrowserLayer"
+      />
+
+
+  
 </configure>
