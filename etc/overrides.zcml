@@ -4,7 +4,7 @@
 
    <!-- ZCML declarations to override the default definitions -->
 
-   <browser:defaultSkin name="Beispiel"/>
+   <browser:defaultSkin name="Wuppertal"/>
    
    <browser:defaultView
        for="zope.interface.Interface"
