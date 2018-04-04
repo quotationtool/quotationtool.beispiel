@@ -67,6 +67,9 @@
   <include package="quotationtool.biblatex.browser"/>
   <include package="quotationtool.figuresng"/-->
 
+  <!-- locally predefined users, e.g. admin -->
+  <include file="local.zcml"/>
+
   <include file="securitypolicy.zcml"/>
 
   <include package="beispiel" />
